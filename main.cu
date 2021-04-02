@@ -1,5 +1,6 @@
 #include <iostream>
 #include "cuda_runtime.h"
+#include "cuda_runtime_api.h"
 
 using namespace std;
 
@@ -33,6 +34,7 @@ int main() {
         cout << "Total Memory: " << prop.totalGlobalMem / 1024.0 / 1024.0 << "MB" << endl;
         cout << "Max Threads per Block: " << prop.maxThreadsPerBlock << endl;
         cout << "Compute capability: " << prop.major << "." << prop.minor << endl;
+
     }
 
     int result;
