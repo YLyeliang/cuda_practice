@@ -2,6 +2,7 @@
 #include "cuda_runtime.h"
 #include "cuda_runtime_api.h"
 
+
 using namespace std;
 
 static void HandleError(cudaError_t err,
